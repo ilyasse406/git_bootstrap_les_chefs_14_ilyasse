@@ -16041,7 +16041,7 @@ body header nav div ul li a:hover {
   color: white;
 }
 body header div {
-  margin-bottom: 200px;
+  padding-bottom: 80px;
 }
 body header div .carousel-indicators li {
   border-radius: 100%;
@@ -16065,6 +16065,56 @@ body header div div div div button {
   border-radius: 30px;
   border: none;
   padding: 15px 20px;
+}
+body section {
+  background-image: url("../../public/images/main_bg.jpg");
+  padding: 50px;
+}
+body section div {
+  background-color: white;
+}
+body section div .row .col-3:last-of-type {
+  padding-right: 0;
+}
+body section div .row .col-3:last-of-type img {
+  height: 24.5%;
+}
+body section div .row .col-3:first-of-type {
+  padding-left: 0;
+}
+body section div .row .col-6 {
+  font-family: courgette;
+}
+body section div div {
+  font-family: courgette;
+}
+body section div div .col-2 li {
+  width: 100%;
+}
+body section div div .col-2 li:hover {
+  border-right: red solid 5px;
+}
+body section div div .col-2 li a:first-of-type i {
+  margin-left: 60px;
+}
+body section div div .col-2 li a:first-of-type i:hover {
+  color: red;
+}
+body section div div .col-2 li i {
+  font-size: 60px;
+}
+body section div div .col-5 div img {
+  border-radius: 50%;
+}
+body section div div .col-5 div div h6 {
+  padding: 0 20px;
+}
+body section div div .col-5 div div p {
+  padding: 0 20px;
+}
+body section div div .col-5 div span {
+  height: 50%;
+  padding: 0 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
