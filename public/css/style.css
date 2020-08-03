@@ -16096,6 +16096,7 @@ body section div div .col-2 li:hover {
 }
 body section div div .col-2 li a:first-of-type i {
   margin-left: 60px;
+  color: #CCCCCC;
 }
 body section div div .col-2 li a:first-of-type i:hover {
   color: red;
@@ -16105,6 +16106,7 @@ body section div div .col-2 li i {
 }
 body section div div .col-5 div img {
   border-radius: 50%;
+  border: solid 5px #CCCCCC;
 }
 body section div div .col-5 div div h6 {
   padding: 0 20px;
@@ -16115,6 +16117,29 @@ body section div div .col-5 div div p {
 body section div div .col-5 div span {
   height: 50%;
   padding: 0 10px;
+}
+body #section2 {
+  position: relative;
+  z-index: 0;
+}
+body #section2::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  background-image: url("../../public/images/team_background.jpg");
+  position: absolute;
+  opacity: 0.8;
+  z-index: -2;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  filter: brightness(30%);
+}
+body #section2 div {
+  font-family: courgette;
+  background: none;
 }
 
 /*# sourceMappingURL=style.css.map */
