@@ -16333,5 +16333,19 @@ body #section4 .blog .col-6 img {
   border-radius: 50%;
   border: solid white 5px;
 }
+body #section5 .bg-rouge {
+  width: 400px;
+  height: 410px;
+  border-radius: 20px;
+}
+body #section5 .bg-rouge i {
+  font-size: 50px;
+}
+body #section5 .bg-rouge span {
+  font-size: 15px;
+}
+body #section5 .bg-rouge h1 {
+  font-family: courgette;
+}
 
 /*# sourceMappingURL=style.css.map */
