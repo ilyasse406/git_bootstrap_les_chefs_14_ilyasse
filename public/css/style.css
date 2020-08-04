@@ -16293,6 +16293,16 @@ body header nav div ul li {
 body header nav div ul li:nth-of-type(5) {
   border: 0;
 }
+@media (min-width: 346px) and (max-width: 645px) {
+  body header nav div ul li:nth-of-type(5) {
+    display: none;
+  }
+}
+@media (min-width: 645px) and (max-width: 1024px) {
+  body header nav div ul li:nth-of-type(5) {
+    display: none;
+  }
+}
 body header nav div ul li:hover {
   background-color: #C42D40;
 }
@@ -16409,6 +16419,11 @@ body #section3 #blanc2 {
 body #section3 #blanc2 .div2:nth-of-type(2) {
   padding: 50px 150px;
 }
+@media (min-width: 346px) and (max-width: 645px) {
+  body #section3 #blanc2 .div2:nth-of-type(2) {
+    padding: 0;
+  }
+}
 body #section3 #blanc2 .div2:nth-of-type(2) form {
   background-image: url("../../public/images/book_table_bg.jpg");
   border-radius: 20px;
@@ -16508,6 +16523,7 @@ body footer .row {
 }
 body footer .row .col-4 ul {
   list-style: none;
+  padding-left: 0;
 }
 body footer .row .col-4 ul li i {
   font-size: 20px;

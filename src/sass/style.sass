@@ -36,11 +36,16 @@ body
             div
                 ul
                     li
-                    
                         border-top: 1px solid white
                         border-bottom: 1px solid white
                         &:nth-of-type(5)
                             border: 0
+                            @media (min-width: 346px) and ( max-width: 645px)
+                                display: none
+                            @media (min-width: 645px) and ( max-width: 1024px)
+                                display: none
+
+            
 
 
                         &:hover
@@ -199,6 +204,8 @@ body
             .div2
                 &:nth-of-type(2)
                     padding: 50px 150px
+                    @media (min-width: 346px) and ( max-width: 645px)
+                        padding: 0
                     
                     form
                         background-image: url("../../public/images/book_table_bg.jpg")
@@ -313,13 +320,22 @@ body
             .col-4
                 ul
                     list-style: none
+                    padding-left: 0
                     li
                         i
                             font-size: 20px
+                
                             
             &:last-of-type
                 button
                     border: white solid 1px
+            &:nth-of-type(2)
+                img
+                    @media (min-width: 346px) and ( max-width: 645px)
+
+
+
+                
                                 
         
             
