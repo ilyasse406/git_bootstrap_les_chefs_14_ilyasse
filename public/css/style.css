@@ -28,6 +28,7 @@
   --light: #f8f9fa;
   --dark: #343a40;
   --rouge: #C42D40;
+  --bleu: blue;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -1904,6 +1905,26 @@ pre code {
   background-color: #e8b0b8;
 }
 
+.table-bleu,
+.table-bleu > th,
+.table-bleu > td {
+  background-color: #b8b8ff;
+}
+.table-bleu th,
+.table-bleu td,
+.table-bleu thead th,
+.table-bleu tbody + tbody {
+  border-color: #7a7aff;
+}
+
+.table-hover .table-bleu:hover {
+  background-color: #9f9fff;
+}
+.table-hover .table-bleu:hover > td,
+.table-hover .table-bleu:hover > th {
+  background-color: #9f9fff;
+}
+
 .table-active,
 .table-active > th,
 .table-active > td {
@@ -2731,6 +2752,36 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(205, 77, 93, 0.5);
 }
 
+.btn-bleu {
+  color: #fff;
+  background-color: blue;
+  border-color: blue;
+}
+.btn-bleu:hover {
+  color: #fff;
+  background-color: #0000d9;
+  border-color: #0000cc;
+}
+.btn-bleu:focus, .btn-bleu.focus {
+  color: #fff;
+  background-color: #0000d9;
+  border-color: #0000cc;
+  box-shadow: 0 0 0 0.2rem rgba(38, 38, 255, 0.5);
+}
+.btn-bleu.disabled, .btn-bleu:disabled {
+  color: #fff;
+  background-color: blue;
+  border-color: blue;
+}
+.btn-bleu:not(:disabled):not(.disabled):active, .btn-bleu:not(:disabled):not(.disabled).active, .show > .btn-bleu.dropdown-toggle {
+  color: #fff;
+  background-color: #0000cc;
+  border-color: #0000bf;
+}
+.btn-bleu:not(:disabled):not(.disabled):active:focus, .btn-bleu:not(:disabled):not(.disabled).active:focus, .show > .btn-bleu.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 38, 255, 0.5);
+}
+
 .btn-outline-primary {
   color: #007bff;
   border-color: #007bff;
@@ -2954,6 +3005,31 @@ fieldset:disabled a.btn {
 }
 .btn-outline-rouge:not(:disabled):not(.disabled):active:focus, .btn-outline-rouge:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-rouge.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(196, 45, 64, 0.5);
+}
+
+.btn-outline-bleu {
+  color: blue;
+  border-color: blue;
+}
+.btn-outline-bleu:hover {
+  color: #fff;
+  background-color: blue;
+  border-color: blue;
+}
+.btn-outline-bleu:focus, .btn-outline-bleu.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 255, 0.5);
+}
+.btn-outline-bleu.disabled, .btn-outline-bleu:disabled {
+  color: blue;
+  background-color: transparent;
+}
+.btn-outline-bleu:not(:disabled):not(.disabled):active, .btn-outline-bleu:not(:disabled):not(.disabled).active, .show > .btn-outline-bleu.dropdown-toggle {
+  color: #fff;
+  background-color: blue;
+  border-color: blue;
+}
+.btn-outline-bleu:not(:disabled):not(.disabled):active:focus, .btn-outline-bleu:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-bleu.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 255, 0.5);
 }
 
 .btn-link {
@@ -4853,6 +4929,19 @@ a.badge-rouge:focus, a.badge-rouge.focus {
   box-shadow: 0 0 0 0.2rem rgba(196, 45, 64, 0.5);
 }
 
+.badge-bleu {
+  color: #fff;
+  background-color: blue;
+}
+a.badge-bleu:hover, a.badge-bleu:focus {
+  color: #fff;
+  background-color: #0000cc;
+}
+a.badge-bleu:focus, a.badge-bleu.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 255, 0.5);
+}
+
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
@@ -5004,6 +5093,18 @@ a.badge-rouge:focus, a.badge-rouge.focus {
 }
 .alert-rouge .alert-link {
   color: #3c0e14;
+}
+
+.alert-bleu {
+  color: #000085;
+  background-color: #ccccff;
+  border-color: #b8b8ff;
+}
+.alert-bleu hr {
+  border-top-color: #9f9fff;
+}
+.alert-bleu .alert-link {
+  color: #000052;
 }
 
 @keyframes progress-bar-stripes {
@@ -5375,6 +5476,20 @@ a.badge-rouge:focus, a.badge-rouge.focus {
   color: #fff;
   background-color: #661721;
   border-color: #661721;
+}
+
+.list-group-item-bleu {
+  color: #000085;
+  background-color: #b8b8ff;
+}
+.list-group-item-bleu.list-group-item-action:hover, .list-group-item-bleu.list-group-item-action:focus {
+  color: #000085;
+  background-color: #9f9fff;
+}
+.list-group-item-bleu.list-group-item-action.active {
+  color: #fff;
+  background-color: #000085;
+  border-color: #000085;
 }
 
 .close {
@@ -6221,6 +6336,16 @@ button.bg-rouge:focus {
   background-color: #9b2332 !important;
 }
 
+.bg-bleu {
+  background-color: blue !important;
+}
+
+a.bg-bleu:hover, a.bg-bleu:focus,
+button.bg-bleu:hover,
+button.bg-bleu:focus {
+  background-color: #0000cc !important;
+}
+
 .bg-white {
   background-color: #fff !important;
 }
@@ -6303,6 +6428,10 @@ button.bg-rouge:focus {
 
 .border-rouge {
   border-color: #C42D40 !important;
+}
+
+.border-bleu {
+  border-color: blue !important;
 }
 
 .border-white {
@@ -9906,6 +10035,14 @@ a.text-dark:hover, a.text-dark:focus {
 
 a.text-rouge:hover, a.text-rouge:focus {
   color: #861f2c !important;
+}
+
+.text-bleu {
+  color: blue !important;
+}
+
+a.text-bleu:hover, a.text-bleu:focus {
+  color: #0000b3 !important;
 }
 
 .text-body {
@@ -16163,7 +16300,7 @@ body header nav div ul li:hover:nth-child(5) {
   background-color: transparent;
 }
 body header div {
-  padding-bottom: 80px;
+  padding-bottom: 70px;
 }
 body header div .carousel-indicators li {
   border-radius: 100%;
@@ -16187,6 +16324,9 @@ body header div div div div button {
   border-radius: 30px;
   border: none;
   padding: 15px 20px;
+}
+body header .bordure {
+  height: 12px;
 }
 body section {
   background-image: url("../../public/images/main_bg.jpg");
@@ -16214,14 +16354,14 @@ body section #blanc div .col-2 li {
   width: 100%;
 }
 body section #blanc div .col-2 li:hover {
-  border-right: red solid 5px;
+  border-right: #C42D40 solid 5px;
 }
 body section #blanc div .col-2 li a:first-of-type i {
   margin-left: 60px;
   color: #CCCCCC;
 }
 body section #blanc div .col-2 li a:first-of-type i:hover {
-  color: red;
+  color: #C42D40;
 }
 body section #blanc div .col-2 li i {
   font-size: 60px;
@@ -16346,6 +16486,34 @@ body #section5 .bg-rouge span {
 }
 body #section5 .bg-rouge h1 {
   font-family: courgette;
+}
+body footer {
+  position: relative;
+  z-index: 0;
+}
+body footer::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../public/images/footer_background.jpg");
+  position: absolute;
+  z-index: -2;
+  background-size: cover;
+  top: 0;
+  left: 0;
+}
+body footer .row {
+  padding-left: 60px;
+}
+body footer .row .col-4 ul {
+  list-style: none;
+}
+body footer .row .col-4 ul li i {
+  font-size: 20px;
+}
+body footer .row:last-of-type button {
+  border: white solid 1px;
 }
 
 /*# sourceMappingURL=style.css.map */
