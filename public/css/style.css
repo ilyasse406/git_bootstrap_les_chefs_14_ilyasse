@@ -16303,6 +16303,11 @@ body header nav div ul li:nth-of-type(5) {
     display: none;
   }
 }
+@media (min-width: 1024px) and (max-width: 1366px) {
+  body header nav div ul li a {
+    padding-left: 0;
+  }
+}
 body header nav div ul li:hover {
   background-color: #C42D40;
 }
@@ -16337,22 +16342,58 @@ body header div div div h1 {
     font-size: 20px;
   }
 }
-@media (min-width: 360px) and (max-width: 650px) and (min-width: 360px) and (max-width: 650px) {
+@media (min-width: 650px) and (max-width: 1024px) {
+  body header div div div h1 {
+    padding: 0px 0px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 650px) and (max-width: 1024px) and (min-width: 360px) and (max-width: 650px) {
   body header div div div h1 span:first-of-type {
     font-size: 30px;
   }
 }
-@media (min-width: 360px) and (max-width: 650px) and (min-width: 360px) and (max-width: 650px) {
+@media (min-width: 650px) and (max-width: 1024px) and (min-width: 650px) and (max-width: 1024px) {
+  body header div div div h1 span:first-of-type {
+    font-size: 30px;
+  }
+}
+@media (min-width: 650px) and (max-width: 1024px) and (min-width: 360px) and (max-width: 650px) {
   body header div div div h1 span:nth-of-type(2) {
     font-size: 30px;
   }
 }
-@media (min-width: 360px) and (max-width: 650px) and (min-width: 360px) and (max-width: 650px) {
+@media (min-width: 650px) and (max-width: 1024px) and (min-width: 650px) and (max-width: 1024px) {
+  body header div div div h1 span:nth-of-type(2) {
+    font-size: 30px;
+  }
+}
+@media (min-width: 650px) and (max-width: 1024px) and (min-width: 360px) and (max-width: 650px) {
   body header div div div h1 span:nth-of-type(3) {
     font-size: 30px;
   }
 }
-@media (min-width: 360px) and (max-width: 650px) and (min-width: 360px) and (max-width: 650px) {
+@media (min-width: 650px) and (max-width: 1024px) and (min-width: 650px) and (max-width: 1024px) {
+  body header div div div h1 span:nth-of-type(3) {
+    font-size: 30px;
+  }
+}
+@media (min-width: 650px) and (max-width: 1024px) and (min-width: 360px) and (max-width: 650px) {
+  body header div div div h1 span:last-of-type {
+    font-size: 30px;
+  }
+}
+@media (min-width: 650px) and (max-width: 1024px) and (min-width: 650px) and (max-width: 1024px) {
+  body header div div div h1 span:last-of-type {
+    font-size: 30px;
+  }
+}
+@media (min-width: 650px) and (max-width: 1024px) and (min-width: 360px) and (max-width: 650px) {
+  body header div div div h1 span:last-of-type {
+    font-size: 30px;
+  }
+}
+@media (min-width: 650px) and (max-width: 1024px) and (min-width: 650px) and (max-width: 1024px) {
   body header div div div h1 span:last-of-type {
     font-size: 30px;
   }
@@ -16657,10 +16698,20 @@ body footer .row .col-lg-4 ul {
 body footer .row .col-lg-4 ul li i {
   font-size: 20px;
 }
+@media (min-width: 346px) and (max-width: 645px) {
+  body footer .row:first-of-type {
+    padding-left: 0;
+  }
+}
 body footer .row:last-of-type button {
   border: white solid 1px;
 }
 @media (min-width: 346px) and (max-width: 645px) {
+  body footer .row:nth-of-type(2) img {
+    width: 50px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1366px) {
   body footer .row:nth-of-type(2) img {
     width: 50px;
   }
