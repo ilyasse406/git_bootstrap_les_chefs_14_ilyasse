@@ -16286,9 +16286,34 @@ body header::before {
   left: 0;
   filter: brightness(35%);
 }
+body header nav .img-2 {
+  display: none;
+}
+@media (min-width: 346px) and (max-width: 645px) {
+  body header nav .img-2 {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1366px) {
+  body header nav .img-2 {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
 body header nav div ul li {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
+}
+@media (min-width: 346px) and (max-width: 645px) {
+  body header nav div ul li {
+    border: none;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1366px) {
+  body header nav div ul li {
+    padding: 0;
+  }
 }
 body header nav div ul li:nth-of-type(5) {
   border: 0;
@@ -16305,7 +16330,7 @@ body header nav div ul li:nth-of-type(5) {
 }
 @media (min-width: 1024px) and (max-width: 1366px) {
   body header nav div ul li a {
-    padding-left: 0;
+    padding: 0 0;
   }
 }
 body header nav div ul li:hover {

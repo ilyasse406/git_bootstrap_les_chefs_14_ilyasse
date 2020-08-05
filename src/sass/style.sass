@@ -33,11 +33,25 @@ body
 
         
         nav
+            .img-2
+                display: none
+                @media (min-width: 346px) and ( max-width: 645px)
+                    display: block
+                    margin-bottom: 20px
+                @media (min-width: 768px) and ( max-width: 1366px)
+                    display: block
+                    margin-bottom: 20px
+                
             div
                 ul
+                    
                     li
                         border-top: 1px solid white
                         border-bottom: 1px solid white
+                        @media (min-width: 346px) and ( max-width: 645px)
+                            border: none
+                        @media (min-width: 1024px) and ( max-width: 1366px)
+                                padding: 0
                         &:nth-of-type(5)
                             border: 0
                             @media (min-width: 346px) and ( max-width: 645px)
@@ -47,7 +61,8 @@ body
 
                         a
                             @media (min-width: 1024px) and ( max-width: 1366px)
-                                padding-left: 0
+                                padding: 0 0
+                                
 
 
 
